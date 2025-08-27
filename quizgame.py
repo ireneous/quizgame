@@ -1,15 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import streamlit as st
-
-
-# In[ ]:
-
-
 import json
 import random
 
@@ -51,40 +40,3 @@ if st.button("Submit Quiz"):
             st.error(f"Q{i+1}: Wrong ❌. Correct answer: {correct_ans}")
     st.write(f"**Your final score: {score} / {len(questions)}**")
     st.session_state.answers = {}  # Reset for next quiz
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
