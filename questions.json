@@ -1,0 +1,76 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
+import json
+
+
+# In[ ]:
+
+
+questions = [
+    {
+        "question": "What is the capital of France?",
+        "options": ["Paris", "Berlin", "London", "Madrid"],
+        "answer": "Paris"
+    },
+    {
+        "question": "Which language is primarily used for data analysis?",
+        "options": ["Python", "HTML", "CSS", "Java"],
+        "answer": "Python"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+        "answer": "Mars"
+    },
+    {
+        "question": "What is 5 + 7?",
+        "options": ["10", "11", "12", "13"],
+        "answer": "12"
+    }
+]
+# Save to questions.json
+with open("questions.json", "w") as f:
+    json.dump(questions, f, indent=4)
+
+print("questions.json saved successfully!")
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
