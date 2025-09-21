@@ -2,7 +2,6 @@ import streamlit as st
 import json
 import random
 
-# Load questions once into session_state
 if "questions" not in st.session_state:
     with open("questions.json") as f:
         questions = json.load(f)
@@ -12,15 +11,12 @@ if "questions" not in st.session_state:
 st.title("Quiz App")
 st.write("Answer the questions below and submit at the end to see your score.")
 
-# Track user's answers
 if "answers" not in st.session_state:
     st.session_state.answers = {}
 
-# Display questions
 for i, q in enumerate(st.session_state.questions):
     st.subheader(f"Q{i+1}: {q['question']}")
 
-    # Get previously saved answer or default to ""
     prev_answer = st.session_state.answers.get(i, "")
 
     selected = st.radio(
@@ -33,7 +29,6 @@ for i, q in enumerate(st.session_state.questions):
     if selected != "":
         st.session_state.answers[i] = selected
 
-# Submit button
 if st.button("Submit Quiz"):
     score = 0
     st.write("---")
