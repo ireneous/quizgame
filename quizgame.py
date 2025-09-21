@@ -2,12 +2,12 @@ import streamlit as st
 import json
 import random
 
-# Load questions from JSON file
-with open("questions.json") as f:
-    questions = json.load(f)
-
-# Shuffle questions
-random.shuffle(questions)
+# Load questions once into session_state
+if "questions" not in st.session_state:
+    with open("questions.json") as f:
+        questions = json.load(f)
+    random.shuffle(questions)
+    st.session_state.questions = questions
 
 st.title("Quiz App")
 st.write("Answer the questions below and submit at the end to see your score.")
@@ -17,12 +17,13 @@ if "answers" not in st.session_state:
     st.session_state.answers = {}
 
 # Display questions
-for i, q in enumerate(questions):
+for i, q in enumerate(st.session_state.questions):
     st.subheader(f"Q{i+1}: {q['question']}")
     selected = st.radio(
         "Choose an answer:",
-        options=[""] + q["options"],  # add blank option
-        key=f"q_{i}"
+        options=[""] + q["options"],  # blank option at start
+        key=f"q_{i}",
+        index=0 if i not in st.session_state.answers else [""] + q["options"].index(st.session_state.answers[i]) + 1
     )
     if selected != "":
         st.session_state.answers[i] = selected
@@ -33,7 +34,7 @@ if st.button("Submit Quiz"):
     st.write("---")
     st.subheader("Results")
 
-    for i, q in enumerate(questions):
+    for i, q in enumerate(st.session_state.questions):
         user_ans = st.session_state.answers.get(i, "")
         correct_ans = q["answer"]
         if user_ans == correct_ans:
@@ -44,5 +45,4 @@ if st.button("Submit Quiz"):
         else:
             st.error(f"Q{i+1}: Wrong ❌. Correct answer: {correct_ans}")
 
-    st.write(f"**Your final score: {score} / {len(questions)}**")
-    st.session_state.answers = {}  # Reset for next quiz
+    st.write(f"**Your final score: {score} / {len(st.session_state.questions)}**")
