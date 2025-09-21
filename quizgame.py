@@ -19,12 +19,17 @@ if "answers" not in st.session_state:
 # Display questions
 for i, q in enumerate(st.session_state.questions):
     st.subheader(f"Q{i+1}: {q['question']}")
+
+    # Get previously saved answer or default to ""
+    prev_answer = st.session_state.answers.get(i, "")
+
     selected = st.radio(
         "Choose an answer:",
-        options=[""] + q["options"],  # blank option at start
+        options=[""] + q["options"],  # Add blank option at top
         key=f"q_{i}",
-        index=0 if i not in st.session_state.answers else [""] + q["options"].index(st.session_state.answers[i]) + 1
+        index=([""] + q["options"]).index(prev_answer) if prev_answer in q["options"] else 0
     )
+
     if selected != "":
         st.session_state.answers[i] = selected
 
