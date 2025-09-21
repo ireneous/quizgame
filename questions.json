@@ -1,22 +1,257 @@
 [
     {
-        "question": "What is the capital of France?",
-        "options": ["Paris", "Berlin", "London", "Madrid"],
-        "answer": "Paris"
+        "question": "What is the capital of Italy?",
+        "options": ["Rome", "Milan", "Naples", "Venice"],
+        "answer": "Rome"
     },
     {
-        "question": "Which language is primarily used for data analysis?",
-        "options": ["Python", "HTML", "CSS", "Java"],
-        "answer": "Python"
+        "question": "How many continents are there on Earth?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7"
     },
     {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Mars", "Venus", "Jupiter", "Saturn"],
-        "answer": "Mars"
+        "question": "Which ocean is the largest?",
+        "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+        "answer": "Pacific"
     },
     {
-        "question": "What is 5 + 7?",
-        "options": ["10", "11", "12", "13"],
-        "answer": "12"
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Van Gogh"],
+        "answer": "Leonardo da Vinci"
+    },
+    {
+        "question": "What is the hardest natural substance?",
+        "options": ["Gold", "Iron", "Diamond", "Granite"],
+        "answer": "Diamond"
+    },
+    {
+        "question": "Which gas do humans need to breathe?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"],
+        "answer": "Oxygen"
+    },
+    {
+        "question": "Which country invented paper?",
+        "options": ["India", "China", "Egypt", "Greece"],
+        "answer": "China"
+    },
+    {
+        "question": "How many days are in a leap year?",
+        "options": ["364", "365", "366", "367"],
+        "answer": "366"
+    },
+    {
+        "question": "What is the currency of Japan?",
+        "options": ["Yen", "Won", "Dollar", "Peso"],
+        "answer": "Yen"
+    },
+    {
+        "question": "Which metal is liquid at room temperature?",
+        "options": ["Mercury", "Iron", "Copper", "Silver"],
+        "answer": "Mercury"
+    },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "options": ["K2", "Everest", "Kilimanjaro", "Denali"],
+        "answer": "Everest"
+    },
+    {
+        "question": "What is the capital of Ghana?",
+        "options": ["Accra", "Kumasi", "Tamale", "Cape Coast"],
+        "answer": "Accra"
+    },
+    {
+        "question": "Which organ pumps blood in the human body?",
+        "options": ["Lungs", "Heart", "Liver", "Kidney"],
+        "answer": "Heart"
+    },
+    {
+        "question": "What is H2O commonly known as?",
+        "options": ["Water", "Salt", "Oxygen", "Hydrogen"],
+        "answer": "Water"
+    },
+    {
+        "question": "Which planet is closest to the Sun?",
+        "options": ["Venus", "Mercury", "Mars", "Earth"],
+        "answer": "Mercury"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["Chaucer", "Shakespeare", "Dickens", "Austen"],
+        "answer": "Shakespeare"
+    },
+    {
+        "question": "Which blood type is known as the universal donor?",
+        "options": ["O-", "O+", "AB+", "A+"],
+        "answer": "O-"
+    },
+    {
+        "question": "Which country is famous for the pyramids?",
+        "options": ["India", "Mexico", "Egypt", "Iraq"],
+        "answer": "Egypt"
+    },
+    {
+        "question": "How many players are in a football (soccer) team?",
+        "options": ["9", "10", "11", "12"],
+        "answer": "11"
+    },
+    {
+        "question": "What is the boiling point of water in Celsius?",
+        "options": ["90", "95", "100", "110"],
+        "answer": "100"
+    },
+    {
+        "question": "Which planet is known for its rings?",
+        "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+        "answer": "Saturn"
+    },
+    {
+        "question": "What is the national language of Brazil?",
+        "options": ["Spanish", "Portuguese", "French", "English"],
+        "answer": "Portuguese"
+    },
+    {
+        "question": "Which bird is the largest in the world?",
+        "options": ["Ostrich", "Eagle", "Emu", "Albatross"],
+        "answer": "Ostrich"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["Au", "Ag", "Gd", "Go"],
+        "answer": "Au"
+    },
+    {
+        "question": "What is the capital of Canada?",
+        "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        "answer": "Ottawa"
+    },
+    {
+        "question": "What is the fastest land animal?",
+        "options": ["Lion", "Tiger", "Cheetah", "Horse"],
+        "answer": "Cheetah"
+    },
+    {
+        "question": "What is the main ingredient in bread?",
+        "options": ["Rice", "Flour", "Corn", "Oats"],
+        "answer": "Flour"
+    },
+    {
+        "question": "How many hours are in a day?",
+        "options": ["12", "24", "36", "48"],
+        "answer": "24"
+    },
+    {
+        "question": "What is the capital of Nigeria?",
+        "options": ["Abuja", "Lagos", "Kano", "Ibadan"],
+        "answer": "Abuja"
+    },
+    {
+        "question": "Which planet is the largest in the solar system?",
+        "options": ["Earth", "Jupiter", "Saturn", "Neptune"],
+        "answer": "Jupiter"
+    },
+    {
+        "question": "Which organ helps us breathe?",
+        "options": ["Heart", "Lungs", "Kidneys", "Liver"],
+        "answer": "Lungs"
+    },
+    {
+        "question": "Who discovered gravity?",
+        "options": ["Einstein", "Newton", "Galileo", "Tesla"],
+        "answer": "Newton"
+    },
+    {
+        "question": "What is the capital of Kenya?",
+        "options": ["Nairobi", "Mombasa", "Kisumu", "Eldoret"],
+        "answer": "Nairobi"
+    },
+    {
+        "question": "What is the largest mammal?",
+        "options": ["Elephant", "Blue Whale", "Shark", "Giraffe"],
+        "answer": "Blue Whale"
+    },
+    {
+        "question": "Which festival is known as the Festival of Lights?",
+        "options": ["Diwali", "Christmas", "Eid", "Hanukkah"],
+        "answer": "Diwali"
+    },
+    {
+        "question": "What is the capital of Australia?",
+        "options": ["Sydney", "Canberra", "Melbourne", "Perth"],
+        "answer": "Canberra"
+    },
+    {
+        "question": "Which vitamin is produced from sunlight?",
+        "options": ["A", "B", "C", "D"],
+        "answer": "D"
+    },
+    {
+        "question": "What is the largest desert in the world?",
+        "options": ["Sahara", "Arabian", "Gobi", "Antarctica"],
+        "answer": "Antarctica"
+    },
+    {
+        "question": "What is the square root of 81?",
+        "options": ["7", "8", "9", "10"],
+        "answer": "9"
+    },
+    {
+        "question": "Which sport uses a racket and shuttlecock?",
+        "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+        "answer": "Badminton"
+    },
+    {
+        "question": "What is the freezing point of water in Celsius?",
+        "options": ["0", "10", "5", "-5"],
+        "answer": "0"
+    },
+    {
+        "question": "What is the capital of South Africa?",
+        "options": ["Cape Town", "Pretoria", "Johannesburg", "Durban"],
+        "answer": "Pretoria"
+    },
+    {
+        "question": "Which country is the largest by land area?",
+        "options": ["USA", "Russia", "China", "Canada"],
+        "answer": "Russia"
+    },
+    {
+        "question": "Which fruit is known as the king of fruits?",
+        "options": ["Mango", "Apple", "Banana", "Pineapple"],
+        "answer": "Mango"
+    },
+    {
+        "question": "Who invented the telephone?",
+        "options": ["Edison", "Bell", "Tesla", "Marconi"],
+        "answer": "Bell"
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": ["O2", "H2O", "HO2", "H2"],
+        "answer": "H2O"
+    },
+    {
+        "question": "Which continent is Egypt in?",
+        "options": ["Asia", "Africa", "Europe", "South America"],
+        "answer": "Africa"
+    },
+    {
+        "question": "What is the largest organ in the human body?",
+        "options": ["Heart", "Skin", "Liver", "Lungs"],
+        "answer": "Skin"
+    },
+    {
+        "question": "What is the tallest animal in the world?",
+        "options": ["Elephant", "Giraffe", "Horse", "Camel"],
+        "answer": "Giraffe"
+    },
+    {
+        "question": "What is the national sport of Japan?",
+        "options": ["Karate", "Sumo Wrestling", "Judo", "Baseball"],
+        "answer": "Sumo Wrestling"
+    },
+    {
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": ["China", "Japan", "Korea", "Thailand"],
+        "answer": "Japan"
     }
 ]
